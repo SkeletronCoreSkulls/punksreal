@@ -6,6 +6,11 @@ import { CONFIG } from "./config.js";
 import { verifyPayment } from "./utils/verifyPayment.js";
 import nftABI from "./abi/X402punks.json" assert { type: "json" };
 
+console.log("🔗 Using NFT_CONTRACT:", CONFIG.NFT_CONTRACT);
+console.log("💼 Using TREASURY_ADDRESS:", CONFIG.TREASURY);
+console.log("RPC:", CONFIG.RPC_URL);
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());
